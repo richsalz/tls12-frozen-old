@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-05T01:02:06.620218+00:00",
+  "timestamp": "2023-12-07T01:01:24.233513+00:00",
   "repo": "richsalz/tls12-frozen",
   "labels": [
     {
@@ -158,6 +158,44 @@
           "body": "@sayrer we WILL do it, just opened this issue to make sure not to forget it :)",
           "createdAt": "2023-11-04T09:45:17Z",
           "updatedAt": "2023-11-04T09:45:17Z"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "I_kwDOJeA3Os547N3v",
+      "title": "Too many IANA registries frozen?",
+      "url": "https://github.com/richsalz/tls12-frozen/issues/10",
+      "state": "OPEN",
+      "author": "davidben",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "This may just be a reading comprehension failure on my end. Section 5 says:\r\n\r\n>  IANA will stop accepting registrations for any TLS parameters [[TLS13REG](https://www.ietf.org/archive/id/draft-rsalz-tls-tls12-frozen-02.html#TLS13REG)] except for the following:\r\n>\r\n> * TLS Exporter Labels\r\n>\r\n> * TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs\r\n\r\nBut several more registries mentioned in RFC 8447 will still be alive and well after TLS 1.2:\r\n\r\n* TLS ExtensionType Values\r\n* TLS Cipher Suites Registry\r\n* TLS Supported Groups\r\n* TLS Alerts Registry\r\n* TLS Certificate Types\r\n\r\nThough I'm also slightly unclear on which registries it means because 8447 just adds to or tweaks those registries, rather than defining them. Am I just misreading this? Maybe it'd be easier to instead explicitly write the registries we mean to close.",
+      "createdAt": "2023-12-06T15:18:16Z",
+      "updatedAt": "2023-12-06T16:22:36Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "richsalz",
+          "authorAssociation": "OWNER",
+          "body": "The intent is to say: If you want to add new values for TLS 1.2 IANA will only allow them for those two specific registries.\r\n\r\nThere are doubtless better ways to say that.",
+          "createdAt": "2023-12-06T15:49:17Z",
+          "updatedAt": "2023-12-06T15:49:17Z"
+        },
+        {
+          "author": "davidben",
+          "authorAssociation": "NONE",
+          "body": "Ah. It read to me like you wanted to close new registrations altogether, since TLS 1.2 and 1.3 share many of the same registries. Maybe we want to phrase it as saying that new registrations are allowed but they need to have some footnote? Or maybe we just require it in prose in the corresponding document? Cipher suite registrations are already partitioned by 1.2 and 1.3 but we don't reflect it in the registry.",
+          "createdAt": "2023-12-06T16:04:03Z",
+          "updatedAt": "2023-12-06T16:04:03Z"
+        },
+        {
+          "author": "richsalz",
+          "authorAssociation": "OWNER",
+          "body": "The 8447bis document adds the \u201cNote\u201d column that this document suggests be used.\r\n",
+          "createdAt": "2023-12-06T16:22:35Z",
+          "updatedAt": "2023-12-06T16:22:35Z"
         }
       ]
     }
@@ -391,6 +429,34 @@
           ]
         }
       ]
+    },
+    {
+      "number": 11,
+      "id": "PR_kwDOJeA3Os5hVBA5",
+      "title": "Update draft-rsalz-uta-require-tls13.md",
+      "url": "https://github.com/richsalz/tls12-frozen/pull/11",
+      "state": "MERGED",
+      "author": "OR13",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-12-06T16:56:29Z",
+      "updatedAt": "2023-12-06T17:03:43Z",
+      "baseRepository": "richsalz/tls12-frozen",
+      "baseRefName": "main",
+      "baseRefOid": "a579e6000a0d4d13e70f67993848b63b713bbe17",
+      "headRepository": "OR13/tls12-frozen",
+      "headRefName": "patch-1",
+      "headRefOid": "c26be6c4492429cccdbab9400c0716896e7b9f8f",
+      "closedAt": "2023-12-06T17:03:42Z",
+      "mergedAt": "2023-12-06T17:03:42Z",
+      "mergedBy": "richsalz",
+      "mergeCommit": {
+        "oid": "a036b9b0d7e18381c269b4e30dd50a2842586c7f"
+      },
+      "comments": [],
+      "reviews": []
     }
   ]
 }
