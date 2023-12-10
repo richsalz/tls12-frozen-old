@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-07T01:01:24.233513+00:00",
+  "timestamp": "2023-12-10T01:05:36.817072+00:00",
   "repo": "richsalz/tls12-frozen",
   "labels": [
     {
@@ -455,6 +455,32 @@
       "mergeCommit": {
         "oid": "a036b9b0d7e18381c269b4e30dd50a2842586c7f"
       },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 12,
+      "id": "PR_kwDOJeA3Os5hi9l2",
+      "title": "Mattson edit; remove unused references",
+      "url": "https://github.com/richsalz/tls12-frozen/pull/12",
+      "state": "OPEN",
+      "author": "richsalz",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Merge just before submitting as a WG doc.",
+      "createdAt": "2023-12-08T17:45:59Z",
+      "updatedAt": "2023-12-08T17:45:59Z",
+      "baseRepository": "richsalz/tls12-frozen",
+      "baseRefName": "main",
+      "baseRefOid": "a036b9b0d7e18381c269b4e30dd50a2842586c7f",
+      "headRepository": "richsalz/tls12-frozen",
+      "headRefName": "mattson-edit",
+      "headRefOid": "37c78a9ffe71f1dd0b8bd62d15f72294c86c5353",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
       "comments": [],
       "reviews": []
     }
