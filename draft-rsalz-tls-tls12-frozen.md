@@ -223,9 +223,11 @@ chosen by the attacker into the plaintext stream. This is usually a devastating
 threat in practice, that allows e.g. obtaining secret cookies in a web setting.
 Refer to {{RENEG1}}, {{RENEG2}}, {{TRIPLESHAKE}} for elaboration. In light of
 the above problems, {{!RFC5746}} specifies an extension that prevents this
-category of attacks. To securely deploy TLS 1.2, either renegotiation must be
-disabled entirely, or this extension must be present. Additionally, clients must
+category of attacks. To securely deploy TLS 1.2, this extension must be present.
+Additionally, clients must
 not allow servers to renegotiate the certificate during a connection.
+And further, TLS exporters cannot be used for authentication without an
+additional extension, "Extended Master Secret"; see {{!RFC7627}}.
 
 Secondly, the original key exchange methods specified for the protocol, namely
 RSA key exchange and finite field Diffie-Hellman, suffer from several
