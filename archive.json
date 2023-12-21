@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-19T01:01:18.059234+00:00",
+  "timestamp": "2023-12-21T01:00:24.441418+00:00",
   "repo": "richsalz/tls12-frozen",
   "labels": [
     {
@@ -470,7 +470,7 @@
       "labels": [],
       "body": "Merge just before submitting as a WG doc.",
       "createdAt": "2023-12-08T17:45:59Z",
-      "updatedAt": "2023-12-08T17:45:59Z",
+      "updatedAt": "2023-12-20T23:10:06Z",
       "baseRepository": "richsalz/tls12-frozen",
       "baseRefName": "main",
       "baseRefOid": "a036b9b0d7e18381c269b4e30dd50a2842586c7f",
@@ -482,7 +482,21 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJeA3Os5qzM0g",
+          "commit": {
+            "abbreviatedOid": "37c78a9"
+          },
+          "author": "dconnolly",
+          "authorAssociation": "NONE",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2023-12-20T23:10:06Z",
+          "updatedAt": "2023-12-20T23:10:06Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
