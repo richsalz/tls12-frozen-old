@@ -5,7 +5,7 @@
 Transport Layer Security                                         R. Salz
 Internet-Draft                                       Akamai Technologies
 Intended status: Informational                                 N. Aviram
-Expires: 8 June 2024                                     6 December 2023
+Expires: 24 June 2024                                   22 December 2023
 
 
                       TLS 1.2 is in Feature Freeze
@@ -56,7 +56,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 8 June 2024.
+   This Internet-Draft will expire on 24 June 2024.
 
 Copyright Notice
 
@@ -133,8 +133,9 @@ Table of Contents
 
 3.  Implications for post-quantum cryptography
 
-   Quantum computers, once available, will have a huge impact on TLS.
-   In 2016, the US National Institute of Standards and Technology
+   Cryptographically relevant quantum computers, once available, will
+   have a huge impact on RSA, FFDH, and ECC which are currently used in
+   TLS.  In 2016, the US National Institute of Standards and Technology
    started a multi-year effort to standardize algorithms that will be
    "safe" once quantum computers are feasible [PQC].  First IETF
    discussions happened around the same time [CFRGSLIDES].
@@ -212,15 +213,6 @@ Table of Contents
 6.  References
 
 6.1.  Normative References
-
-   [DNSTLS]   Dickinson, S., Gillmor, D., and T. Reddy, "Usage Profiles
-              for DNS over TLS and DNS over DTLS", RFC 8310,
-              DOI 10.17487/RFC8310, March 2018,
-              <https://www.rfc-editor.org/rfc/rfc8310>.
-
-   [QUICTLS]  Thomson, M., Ed. and S. Turner, Ed., "Using TLS to Secure
-              QUIC", RFC 9001, DOI 10.17487/RFC9001, May 2021,
-              <https://www.rfc-editor.org/rfc/rfc9001>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
