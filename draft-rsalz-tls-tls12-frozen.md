@@ -32,7 +32,7 @@ author:
 normative:
   TLS12: RFC5246
   TLS13: RFC8446
-  TLS13REG: RFC8447
+  I-D.ietf-tls-rfc8447bis:
 
 informative:
   PQC:
@@ -251,14 +251,18 @@ BEAST {{BEAST}}, Logjam {{WEAKDH}}, FREAK {{FREAK}}, and SLOTH {{SLOTH}}.
 
 # IANA Considerations {#iana}
 
-IANA will stop accepting registrations for any TLS parameters {{TLS13REG}}
-except for the following:
+The following TLS registries are unchanged:
 
 - TLS Exporter Labels
 - TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs
 
-Entries in any other TLS protocol registry should have an indication like
-"For TLS 1.3 or later" in their entry.
+All other TLS registries will not accept any entry for TLS 1.2.
+If new TLS entries are created (for example, a new cipher suite), this
+requirement should be indicated by putting text in the Note column
+(added by {{I-D.ietf-tls-rfc8447bis}});
+something like "For TLS 1.3 or later" in their entry.
+As this document does not change the requirements around DTLS, the
+wording may need to be revised depending on context.
 
 
 --- back
