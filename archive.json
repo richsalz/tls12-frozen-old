@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-21T01:00:24.441418+00:00",
+  "timestamp": "2023-12-24T01:04:17.709887+00:00",
   "repo": "richsalz/tls12-frozen",
   "labels": [
     {
@@ -173,7 +173,7 @@
       "labels": [],
       "body": "This may just be a reading comprehension failure on my end. Section 5 says:\r\n\r\n>  IANA will stop accepting registrations for any TLS parameters [[TLS13REG](https://www.ietf.org/archive/id/draft-rsalz-tls-tls12-frozen-02.html#TLS13REG)] except for the following:\r\n>\r\n> * TLS Exporter Labels\r\n>\r\n> * TLS Application-Layer Protocol Negotiation (ALPN) Protocol IDs\r\n\r\nBut several more registries mentioned in RFC 8447 will still be alive and well after TLS 1.2:\r\n\r\n* TLS ExtensionType Values\r\n* TLS Cipher Suites Registry\r\n* TLS Supported Groups\r\n* TLS Alerts Registry\r\n* TLS Certificate Types\r\n\r\nThough I'm also slightly unclear on which registries it means because 8447 just adds to or tweaks those registries, rather than defining them. Am I just misreading this? Maybe it'd be easier to instead explicitly write the registries we mean to close.",
       "createdAt": "2023-12-06T15:18:16Z",
-      "updatedAt": "2023-12-06T16:22:36Z",
+      "updatedAt": "2023-12-22T14:35:42Z",
       "closedAt": null,
       "comments": [
         {
@@ -196,6 +196,13 @@
           "body": "The 8447bis document adds the \u201cNote\u201d column that this document suggests be used.\r\n",
           "createdAt": "2023-12-06T16:22:35Z",
           "updatedAt": "2023-12-06T16:22:35Z"
+        },
+        {
+          "author": "richsalz",
+          "authorAssociation": "OWNER",
+          "body": "@davidben please see #13 and approve or suggest changes.",
+          "createdAt": "2023-12-22T14:35:41Z",
+          "updatedAt": "2023-12-22T14:35:41Z"
         }
       ]
     }
@@ -463,24 +470,26 @@
       "id": "PR_kwDOJeA3Os5hi9l2",
       "title": "Mattson edit; remove unused references",
       "url": "https://github.com/richsalz/tls12-frozen/pull/12",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "richsalz",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "Merge just before submitting as a WG doc.",
       "createdAt": "2023-12-08T17:45:59Z",
-      "updatedAt": "2023-12-20T23:10:06Z",
+      "updatedAt": "2023-12-22T14:08:48Z",
       "baseRepository": "richsalz/tls12-frozen",
       "baseRefName": "main",
       "baseRefOid": "a036b9b0d7e18381c269b4e30dd50a2842586c7f",
       "headRepository": "richsalz/tls12-frozen",
       "headRefName": "mattson-edit",
       "headRefOid": "37c78a9ffe71f1dd0b8bd62d15f72294c86c5353",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2023-12-22T14:08:38Z",
+      "mergedAt": "2023-12-22T14:08:38Z",
+      "mergedBy": "richsalz",
+      "mergeCommit": {
+        "oid": "b369f04d2505fccd1af264ecfd5d09010eb79844"
+      },
       "comments": [],
       "reviews": [
         {
@@ -497,6 +506,34 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 13,
+      "id": "PR_kwDOJeA3Os5iqAOD",
+      "title": "Clarify IANA considerations",
+      "url": "https://github.com/richsalz/tls12-frozen/pull/13",
+      "state": "OPEN",
+      "author": "richsalz",
+      "authorAssociation": "OWNER",
+      "assignees": [
+        "richsalz"
+      ],
+      "labels": [],
+      "body": "David Benjamin pointed out the wording in IANA considerations is misleading.\r\n\r\nFixes: #10",
+      "createdAt": "2023-12-22T14:35:04Z",
+      "updatedAt": "2023-12-22T14:35:04Z",
+      "baseRepository": "richsalz/tls12-frozen",
+      "baseRefName": "main",
+      "baseRefOid": "b369f04d2505fccd1af264ecfd5d09010eb79844",
+      "headRepository": "richsalz/tls12-frozen",
+      "headRefName": "fix-10",
+      "headRefOid": "7c6ba77b1589fb5dad05809d5139fd5e15abc336",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
