@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2023-12-31T01:04:45.175990+00:00",
+  "timestamp": "2024-01-02T00:59:31.155897+00:00",
   "repo": "richsalz/tls12-frozen",
   "labels": [
     {
@@ -521,7 +521,7 @@
       "labels": [],
       "body": "David Benjamin pointed out the wording in IANA considerations is misleading.\r\n\r\nFixes: #10",
       "createdAt": "2023-12-22T14:35:04Z",
-      "updatedAt": "2023-12-22T14:35:04Z",
+      "updatedAt": "2024-01-01T18:35:49Z",
       "baseRepository": "richsalz/tls12-frozen",
       "baseRefName": "main",
       "baseRefOid": "b369f04d2505fccd1af264ecfd5d09010eb79844",
@@ -533,7 +533,28 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJeA3Os5rR4jz",
+          "commit": {
+            "abbreviatedOid": "7c6ba77"
+          },
+          "author": "davidben",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-01-01T18:35:49Z",
+          "updatedAt": "2024-01-01T18:35:49Z",
+          "comments": [
+            {
+              "originalPosition": 28,
+              "body": "Does this mean that new TLS/DTLS-agnostic extensions should be defined TLS 1.3+ and DTLS 1.2+? That seems a bit weird. Or are we saying that TLS/DTLS-agnostic extensions should be (D)TLS 1.3+ by way of \"For TLS 1.3 or later\", while DTLS-only extensions are allowed to target DTLS 1.2 and don't need that note?",
+              "createdAt": "2024-01-01T18:35:49Z",
+              "updatedAt": "2024-01-01T18:35:50Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
